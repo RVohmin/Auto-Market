@@ -1,0 +1,58 @@
+.jumbotron-fluid {
+    padding: 0;
+    /*margin: 0;*/
+}
+
+.jumbotron__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info {
+    display: flex;
+    justify-content: space-between!important;
+}
+.alert-info {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-success {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form__content {
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.input-group {
+    width: 40%;
+}
+.input-group-text {
+    background-color: white;
+    width: 180px;
+}
+.btn-submit {
+    display: flex;
+    justify-content: center;
+}
+#photo {
+    padding: .375rem .75rem;
+}
+.input-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
