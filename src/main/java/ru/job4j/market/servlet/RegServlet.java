@@ -3,6 +3,7 @@ package ru.job4j.market.servlet;
 import ru.job4j.market.persistence.User;
 import ru.job4j.market.service.MarketHbmStore;
 
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,6 +16,7 @@ import static ru.job4j.market.servlet.IndexServlet.LOGGER;
  * @author romanvohmin
  * @since 05.08.2020
  */
+@WebServlet("/reg.do")
 public class RegServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {

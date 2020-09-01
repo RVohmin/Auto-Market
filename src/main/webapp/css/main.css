@@ -59,6 +59,38 @@ textarea::-moz-placeholder {
     align-items: center;
     justify-content: space-between!important;
 }
+.center {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+label {
+    margin: 0;
+}
+.btn-primary {
+    width: 5rem!important;
+}
+.wrapper__content {
+    padding-top: 0!important;
+}
+.btn-light {
+    margin: 7px;
+}
+.dropdown-menu.show {
+    width: 300px;
+    left: -45px!important;
+}
+.btn-primary {
+    width: 300px;
+}
+.form-control {
+    margin-right: 15px;
+    padding: 0;
+    padding-left: 0.4rem;
+}
 .btn {
     padding: 0 5px 0 5px;
     margin-right: 10px;
@@ -122,7 +154,9 @@ textarea::-moz-placeholder {
 .form-check-input {
     margin-top: .2rem;
 }
-
+.alert {
+    padding: 0.4rem 1.2rem;
+}
 .alert-info {
     padding: 0;
     margin: 0;

@@ -120,6 +120,43 @@ public class MarketHbmStore implements Store, AutoCloseable {
                     return null;
                 }
         );
+    }
 
+    @Override
+    public Collection<PostCar> findPostCarByLastDay() {
+        LOGGER.debug("----------- in findPostCarByLastDay ------------");
+        return tx(session -> session.createQuery(
+        "from PostCar t where date(current_date) - date(t.data) <= 1").list());
+
+    };
+
+    public Collection<PostCar> findPostCarWithPhoto() {
+        LOGGER.debug("----------- in findPostCarWithPhoto ------------");
+        return tx(session -> session.createQuery("from PostCar t where t.photo != null").list());
+
+    };
+
+    public Collection<PostCar> findPostCarByMark(String name) {
+        LOGGER.debug("----------- in findPostCarByMark ------------");
+        return tx(
+                session -> {
+                    final Query query = session.createQuery("from PostCar where mark = :fname");
+                    query.setParameter("fname", name);
+                    Collection<PostCar> list = query.list();
+                    return list;
+                }
+        );
+    };
+
+    public Collection<PostCar> findPostCarByModel(String name) {
+        LOGGER.debug("----------- in findPostCarByModel ------------");
+        return tx(
+                session -> {
+                    final Query query = session.createQuery("from PostCar where model = :fname");
+                    query.setParameter("fname", name);
+                    Collection<PostCar> list = query.list();
+                    return list;
+                }
+        );
     }
 }

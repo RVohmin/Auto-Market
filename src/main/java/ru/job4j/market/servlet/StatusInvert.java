@@ -22,6 +22,5 @@ public class StatusInvert extends HttpServlet {
                 status);
         MarketHbmStore.instOf().changeStatusByPostId(id, status);
         resp.sendRedirect(req.getContextPath() + "/account.do");
-//        req.getRequestDispatcher("/account.do").forward(req, resp);
     }
 }

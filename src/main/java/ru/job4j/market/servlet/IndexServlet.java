@@ -27,10 +27,8 @@ public class IndexServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         LOGGER.info("------- In IndexServlet ------------{}", 22);
-        req.getParameter("start");
         Collection<PostCar> postCars = MarketHbmStore.instOf().findAllPostCar();
         req.setAttribute("posts", postCars);
-//        req.getRequestDispatcher("index.jsp").forward(req, resp);
         req.getRequestDispatcher("/WEB-INF/index.jsp").forward(req, resp);
     }
 }

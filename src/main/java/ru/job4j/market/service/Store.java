@@ -15,4 +15,8 @@ public interface Store {
     Collection<PostCar> findAllPostCar();
     Collection<PostCar> findPostCarByUserId(int id);
     void changeStatusByPostId(int id, boolean status);
+    Collection<PostCar> findPostCarByLastDay();
+    Collection<PostCar> findPostCarWithPhoto();
+    Collection<PostCar> findPostCarByMark(String mark);
+    Collection<PostCar> findPostCarByModel(String model);
 }

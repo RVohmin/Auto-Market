@@ -12,7 +12,8 @@
           rel="stylesheet">
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="<%=request.getContextPath()%>/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<%=request.getContextPath()%>/img/favicon.ico"
+          type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -50,11 +51,13 @@
                                 Текущий пользователь: <c:out value="${user.name}"/> | Выйти</a>
                         </div>
                         <div>
-                            <a class="nav-link" href="<%=request.getContextPath()%>/account.do">
+                            <a class="btn btn-outline-dark"
+                               href="<%=request.getContextPath()%>/account.do">
                                 Мои объявления</a>
                         </div>
                         <div>
-                            <a href="<%=request.getContextPath()%>/upload.jsp" class="btn btn-outline-primary">Добавить
+                            <a href="<%=request.getContextPath()%>/upload.jsp"
+                               class="btn btn-outline-danger">Добавить
                                 объявление</a>
                         </div>
                     </div>
@@ -63,6 +66,69 @@
                 <div class="container, jumbotron__head">
                     <h1 class="display-6">Объявления о продаже автомобилей</h1>
                     <p class="lead">Выбери свой автомобиль мечты по реальным ценам!</p>
+                </div>
+
+                <div class="alert alert-light info" role="alert">
+                    <form action="<%=request.getContextPath()%>/index.jsp" method="get">
+                        <input type="hidden" name="filter" value="photo">
+                        <button type="submit"
+                                class="btn btn-outline-primary">Показать все
+                        </button>
+                    </form>
+                    <form action="<%=request.getContextPath()%>/select.do" method="get">
+                        <input type="hidden" name="filter" value="photo">
+                        <button type="submit"
+                                class="btn btn-outline-primary">Показать только с фото
+                        </button>
+                    </form>
+                    <form action="<%=request.getContextPath()%>/select.do" method="get">
+                        <input type="hidden" name="filter" value="day">
+                        <button type="submit"
+                                class="btn btn-outline-primary">Показать за последний день
+                        </button>
+                    </form>
+
+                    <div class="dropdown">
+                        <button class="btn btn-outline-primary dropdown-toggle" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                            Фильтр по марке или модели
+                        </button>
+                        <div class="dropdown-menu">
+                            <form action="<%=request.getContextPath()%>/select.do" method="get"
+                                  class="dropdown-item center">
+                                <div class="center">
+                                    <div >
+                                        <label class="center">
+                                            <input type="text" name="mark" class="form-control"
+                                                   placeholder="Марка авто">
+                                        </label>
+                                    </div>
+                                    <div>
+                                    <button type="submit"
+                                            class="btn btn-primary">Найти
+                                    </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <form action="<%=request.getContextPath()%>/select.do" method="get"
+                                  class="dropdown-item center">
+                                <div class="center">
+                                    <div>
+                                        <label class="center">
+                                            <input type="text" name="model" class="form-control"
+                                                   placeholder="Модель авто">
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <button type="submit"
+                                                class="btn btn-primary">Найти
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
