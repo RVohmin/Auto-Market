@@ -33,7 +33,7 @@
                         Текущий пользователь: <c:out value="${user.name}"/> | Выйти</a>
                 </div>
                 <div class="nav-link">
-                    <a href="<%=request.getContextPath()%>/WEB-INF/index.jsp" class="nav-pills">На
+                    <a href="<%=request.getContextPath()%>/index.jsp" class="nav-pills">На
                         главную</a>
                 </div>
             </div>
