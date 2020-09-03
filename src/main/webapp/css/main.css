@@ -4,7 +4,6 @@
 
 .jumbotron-fluid {
     padding: 0;
-    /*margin: 0;*/
 }
 
 .jumbotron__head {
@@ -50,10 +49,6 @@ textarea::-moz-placeholder {
     width: 45%;
 }
 
-/*button {*/
-/*    margin-left: 40px;*/
-/*}*/
-
 .info {
     display: flex;
     align-items: center;
@@ -95,10 +90,7 @@ label {
     padding: 0 5px 0 5px;
     margin-right: 10px;
 }
-/*card {*/
-/*    position: relative;*/
-/*    height: 80%;*/
-/*}*/
+
 .jumbotron {
     margin: 0;
 }
@@ -123,8 +115,6 @@ label {
     padding: 4px!important;
 }
 .status {
-    /*position: absolute;*/
-    /*margin-left: -50%;*/
     font-size: 20px;
     color: maroon;
     text-decoration: underline;
@@ -135,14 +125,6 @@ label {
 .wrapper__content {
     padding: 10px;
 }
-/*.alert-primary {*/
-/*    padding: 0;*/
-/*    margin: 0;*/
-/*    font-size: 14px;*/
-/*    display: flex;*/
-/*    justify-content: flex-end;*/
-/*    align-items: center;*/
-/*}*/
 
 .form-check {
     padding: 5px;

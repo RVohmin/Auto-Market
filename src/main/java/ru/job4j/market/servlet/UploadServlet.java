@@ -7,7 +7,6 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import ru.job4j.market.persistence.Photo;
 import ru.job4j.market.service.MarketHbmStore;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,7 +17,6 @@ import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**

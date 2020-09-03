@@ -5,7 +5,6 @@ import ru.job4j.market.persistence.PostCar;
 import ru.job4j.market.persistence.User;
 import ru.job4j.market.service.MarketHbmStore;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

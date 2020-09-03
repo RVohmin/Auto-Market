@@ -22,7 +22,6 @@
         <%@include file='../css/main.css' %>
     </style>
     <title>Auto Market</title>
-    <%--    <script src="../script.js" type="text/javascript"></script>--%>
 </head>
 
 <body>
@@ -98,16 +97,16 @@
                             <form action="<%=request.getContextPath()%>/select.do" method="get"
                                   class="dropdown-item center">
                                 <div class="center">
-                                    <div >
+                                    <div>
                                         <label class="center">
                                             <input type="text" name="mark" class="form-control"
                                                    placeholder="Марка авто">
                                         </label>
                                     </div>
                                     <div>
-                                    <button type="submit"
-                                            class="btn btn-primary">Найти
-                                    </button>
+                                        <button type="submit"
+                                                class="btn btn-primary">Найти
+                                        </button>
                                     </div>
                                 </div>
                             </form>
@@ -158,7 +157,6 @@
                                      class="card-img-top"
                                      alt="car image">
                             </c:if>
-                                <%--                               <c:out value="${post.status}"/>--%>
                             <div class="card-body">
                                 <h5 class="card-title"><c:out
                                         value="${post.mark}"/> <c:out

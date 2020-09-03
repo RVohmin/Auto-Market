@@ -11,9 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.Timestamp;
 import java.util.Collection;
-import java.util.Date;
 
 /**
  * ru.job4j.dream.servlet
