@@ -9,9 +9,11 @@
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">125478</property>
         <property name="hibernate.connection.pool_size">1</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.current_session_context_class">thread</property>
         <property name="hibernate.show_sql">false</property>
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
+        <property name="hibernate.connection.isolation">4</property>
         <mapping class="ru.job4j.market.persistence.User"/>
         <mapping class="ru.job4j.market.persistence.Photo"/>
         <mapping class="ru.job4j.market.persistence.PostCar"/>

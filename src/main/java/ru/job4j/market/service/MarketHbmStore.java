@@ -2,7 +2,9 @@ package ru.job4j.market.service;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.StatelessSession;
 import org.hibernate.Transaction;
+import java.sql.Connection;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -10,18 +12,17 @@ import org.hibernate.query.Query;
 import ru.job4j.market.persistence.Photo;
 import ru.job4j.market.persistence.PostCar;
 import ru.job4j.market.persistence.User;
-import static ru.job4j.market.servlet.IndexServlet.LOGGER;
 
 import java.util.Collection;
-import java.util.List;
 import java.util.function.Function;
+
+import static ru.job4j.market.servlet.IndexServlet.LOGGER;
 
 public class MarketHbmStore implements Store, AutoCloseable {
     private final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
             .configure().build();
     private final SessionFactory sf = new MetadataSources(registry)
             .buildMetadata().buildSessionFactory();
-
     private MarketHbmStore() {
     }
 

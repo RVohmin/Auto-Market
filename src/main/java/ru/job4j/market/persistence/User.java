@@ -13,7 +13,7 @@ public class User {
     private String name;
     private String email;
     private String password;
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
     private Set<PostCar> posts = new HashSet<>();
 
     public User() {

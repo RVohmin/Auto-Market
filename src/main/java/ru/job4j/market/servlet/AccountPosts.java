@@ -24,3 +24,5 @@ public class AccountPosts extends HttpServlet {
         req.getRequestDispatcher("account_posts.jsp").forward(req, resp);
     }
 }
+
+
