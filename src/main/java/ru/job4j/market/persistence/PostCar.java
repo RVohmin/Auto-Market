@@ -35,7 +35,6 @@ public class PostCar {
             String mark, String model, String color, String type, String manufacturedYear,
             String mileage, String bodyType, boolean status, String price, String fuel,
             Timestamp data, Photo photo, User user) {
-        this.id = id;
         this.mark = mark;
         this.model = model;
         this.color = color;
